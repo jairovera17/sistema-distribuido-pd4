@@ -16,7 +16,8 @@ module.exports = {
 
     nickname:{
       type:'string',
-      required:true
+      required:true,
+      unique:true
     },
 
     password:{

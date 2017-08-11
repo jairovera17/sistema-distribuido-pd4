@@ -1,0 +1,62 @@
+
+<div class="container">
+
+  <h1>Bienvenido</h1>
+
+  <div class="row">
+    <div class="col-lg-6" style="text-align: center;padding: 10px" >
+      <button class="btn btn-primary" (click)="this.openSignIn()">
+        Inicia Sesion
+      </button>
+    </div>
+    <div class="col-lg-6" style="text-align: center;padding: 10px;">
+      <button class="btn btn-outline-primary" (click)="this.openSignUp()">
+        Registrarte
+      </button>
+    </div>
+  </div>
+
+</div>
+
+<div class="container" *ngIf="this.signIn">
+  <h1>Logeate</h1>
+
+  <div class="form-group">
+    <label class="col-form-label-sm">Nombre de Usuario:</label>
+    <input class="form-control"
+      required
+      minlength="5"
+      maxlength="20"
+      placeholder="Tu nombre de usuario"
+      type="text"
+      [(ngModel)]="this.usuarioLog.nickname"
+    >
+
+    <label class="col-form-label-sm">Password:</label>
+
+    <input
+      class="form-control"
+      type="password"
+    [(ngModel)]="this.usuarioLog.password">
+
+    <pre>
+      {{this.usuarioLog|json}}
+    </pre>
+
+    <button class="btn btn-success"
+            [disabled]="!this.usuarioLog.nickname||!this.usuarioLog.password"
+            (click)="this.logear(this.usuarioLog)">
+      Logearme
+    </button>
+
+
+
+  </div>
+
+</div>
+
+<div class="container" *ngIf="this.signUp">
+  <h1>Registrate</h1>
+</div>
+
+
