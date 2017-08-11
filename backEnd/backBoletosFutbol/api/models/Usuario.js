@@ -8,7 +8,7 @@
 module.exports = {
 
   attributes: {
-
+//hola
     nombre:{
       type:'string',
       required:true
