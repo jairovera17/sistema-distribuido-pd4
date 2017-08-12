@@ -8,7 +8,7 @@
 module.exports = {
 
   attributes: {
-
+//hola
     nombre:{
       type:'string',
       required:true
@@ -16,7 +16,8 @@ module.exports = {
 
     nickname:{
       type:'string',
-      required:true
+      required:true,
+      unique:true
     },
 
     password:{
