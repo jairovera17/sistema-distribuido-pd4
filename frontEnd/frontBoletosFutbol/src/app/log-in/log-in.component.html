@@ -24,9 +24,6 @@
   <div class="form-group">
     <label class="col-form-label-sm">Nombre de Usuario:</label>
     <input class="form-control"
-      required
-      minlength="5"
-      maxlength="20"
       placeholder="Tu nombre de usuario"
       type="text"
       [(ngModel)]="this.usuarioLog.nickname"
@@ -39,9 +36,7 @@
       type="password"
     [(ngModel)]="this.usuarioLog.password">
 
-    <pre>
-      {{this.usuarioLog|json}}
-    </pre>
+    <hr>
 
     <button class="btn btn-success"
             [disabled]="!this.usuarioLog.nickname||!this.usuarioLog.password"
@@ -49,14 +44,62 @@
       Logearme
     </button>
 
+  </div>
 
-
+  <div *ngIf="this.noLog" class="alert-warning" style="padding: 15px">
+      No existe usuario o password errado. Intenda de Nuevo
+    <hr>
+    <button class="btn btn-warning" (click)="this.noLog=false">
+          OK
+    </button>
   </div>
 
 </div>
 
 <div class="container" *ngIf="this.signUp">
   <h1>Registrate</h1>
+
+  <div class="form-group">
+
+    <label class="col-form-label-sm">Nombre Real:</label>
+
+    <input
+      class="form-control"
+      type="text"
+      placeholder="Tu nombre verdadero"
+      [(ngModel)]="this.usuarioLog.nombre">
+
+    <label class="col-form-label-sm">Nombre de Usuario:</label>
+    <input class="form-control"
+           placeholder="Tu nombre de usuario"
+           type="text"
+           [(ngModel)]="this.usuarioLog.nickname"
+    >
+    <label class="col-form-label-sm">Password:</label>
+
+    <input
+      class="form-control"
+      type="password"
+      placeholder="Clave"
+      [(ngModel)]="this.usuarioLog.password">
+
+    <hr>
+
+    <button class="btn btn-success"
+            [disabled]="!this.usuarioLog.nickname||!this.usuarioLog.password"
+            (click)="this.registrar(this.usuarioLog)">
+      Registrarme
+    </button>
+
+  </div>
+
+
+  <div class="alert-warning" style="padding: 15px" *ngIf="this.usuarioRepetido">
+    El nombre de usuario ya existe Ingresa uno Nuevo.
+    <button class="btn btn-warning" (click)="this.usuarioRepetido=false;">
+      OK
+    </button>
+  </div>
 </div>
 
 

@@ -18,7 +18,7 @@ export class InicioComponent implements OnInit {
 
   setUsuario(user: Usuario) {
 
-    if (user.nombre) {
+    if (user) {
       this.usuario = user;
     }
 

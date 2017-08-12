@@ -1,28 +1,20 @@
 # FrontBoletosFutbol
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.0.
+# Como ejecutar
 
-## Development server
+1. La primera vez ejecutar el comando:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+> npm install 
 
-## Code scaffolding
+2. Para ejecutar unicamente en el mismo computador, ejecutar el comando:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+> ng serve
 
-## Build
+3. Para ejecutar como servidor, ejecutar el comando:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+> ng serve --host <ip host server>
 
-## Running unit tests
+# Importante 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Colocar los url adecuados para el backend de modo que los dispositivos externos funcionen adecuadamente
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
