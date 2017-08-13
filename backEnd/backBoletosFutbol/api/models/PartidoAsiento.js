@@ -1,5 +1,5 @@
 /**
- * Boleto.js
+ * PartidoAsiento.js
  *
  * @description :: TODO: You might write a short summary of how this model works and what it represents here.
  * @docs        :: http://sailsjs.org/documentation/concepts/models-and-orm/models
@@ -9,17 +9,33 @@ module.exports = {
 
   attributes: {
 
-    idUsuario:{
-      model:'Usuario',
+
+    idAsiento:{
+      model:'Asiento',
       required:true
     },
 
-
-
-    idPartidoAsiento:{
-      model:'PartidoAsiento',
+    precio:{
+      type:'number',
       required:true
+    },
+
+    estado:{
+      type:'boolean',
+      required:true
+    },
+
+    idPartido:{
+      model:'Partido',
+      required:true
+    },
+
+    idBoleto:{
+      collection:'Boleto',
+      via:'idPartidoAsiento'
     }
+
+
 
   }
 };

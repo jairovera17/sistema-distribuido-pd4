@@ -11,13 +11,15 @@ import { LogInComponent } from './log-in/log-in.component';
 import {UsuarioLogService} from './usuario-log.service';
 import {MasterUrlService} from './master-url.service';
 import { MainViewComponent } from './main-view/main-view.component';
+import { ViewPartidosComponent } from './view-partidos/view-partidos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InicioComponent,
     LogInComponent,
-    MainViewComponent
+    MainViewComponent,
+    ViewPartidosComponent
   ],
   imports: [
     BrowserModule,

@@ -23,6 +23,11 @@ module.exports = {
     password:{
       type:'string',
       required:true
+    },
+
+    idBoleto:{
+      collection:'Boleto',
+      via:'idUsuario'
     }
 
   }
