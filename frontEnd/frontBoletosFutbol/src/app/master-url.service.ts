@@ -3,14 +3,16 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class MasterUrlService {
 
-  UsuarioURL = 'http://localhost:1337/Usuario';
-
+  direccionBackEnd = '192.168.1.5:1337'
+  UsuarioURL = 'http://' + this.direccionBackEnd + '/Usuario';
+  PartidoURL = 'http://' + this.direccionBackEnd + '/Partido';
+  EquipoURL  = 'http://' + this.direccionBackEnd + '/Equipo';
+  EstadioURL = 'http://' + this.direccionBackEnd + '/Estadio';
+  AsientoURL = 'http://' + this.direccionBackEnd + '/Asiento';
+  PartidoAsientoURL = 'http://' + this.direccionBackEnd + '/PartidoAsiento';
   constructor() { }
 
 
-  getUsuarioURL() {
-    return this.UsuarioURL;
-  }
 
 }
 

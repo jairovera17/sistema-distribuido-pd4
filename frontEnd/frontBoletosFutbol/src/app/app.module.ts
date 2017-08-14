@@ -11,13 +11,18 @@ import { LogInComponent } from './log-in/log-in.component';
 import {UsuarioLogService} from './usuario-log.service';
 import {MasterUrlService} from './master-url.service';
 import { MainViewComponent } from './main-view/main-view.component';
+import { ViewPartidosComponent } from './view-partidos/view-partidos.component';
+import {PartidosService} from "./partidos.service";
+import { ProximosPartidosViewComponent } from './proximos-partidos-view/proximos-partidos-view.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InicioComponent,
     LogInComponent,
-    MainViewComponent
+    MainViewComponent,
+    ViewPartidosComponent,
+    ProximosPartidosViewComponent
   ],
   imports: [
     BrowserModule,
@@ -33,10 +38,14 @@ import { MainViewComponent } from './main-view/main-view.component';
       {
         path: 'mainView',
         component: MainViewComponent
+      },
+      {
+        path: 'partidosView',
+        component: ViewPartidosComponent
       }
     ])
   ],
-  providers: [UsuarioLogService, MasterUrlService],
+  providers: [UsuarioLogService, MasterUrlService, PartidosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

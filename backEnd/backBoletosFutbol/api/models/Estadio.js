@@ -9,6 +9,26 @@ module.exports = {
 
   attributes: {
 
+    nombre:{
+      type:'string',
+      unique: true
+
+    },
+    ciudad:{
+      type:'string'
+    },
+    direccion: {
+      type: 'string'
+    },
+
+    idPartido:{
+      collection:'Partido',
+      via:'idEstadio'
+    }
+
+
+
+
   }
 };
 

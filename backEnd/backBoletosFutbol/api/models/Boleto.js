@@ -9,6 +9,18 @@ module.exports = {
 
   attributes: {
 
+    idUsuario:{
+      model:'Usuario',
+      required:true
+    },
+
+
+
+    idPartidoAsiento:{
+      model:'PartidoAsiento',
+      required:true
+    }
+
   }
 };
 

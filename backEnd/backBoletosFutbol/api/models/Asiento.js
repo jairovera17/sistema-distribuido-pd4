@@ -1,5 +1,5 @@
 /**
- * Equipo.js
+ * Asiento.js
  *
  * @description :: TODO: You might write a short summary of how this model works and what it represents here.
  * @docs        :: http://sailsjs.org/documentation/concepts/models-and-orm/models
@@ -9,20 +9,22 @@ module.exports = {
 
   attributes: {
 
-    nombre:{
-      type:'string',
-      unique:true
+    seccion:{
+      type:'string'
+    },
+    fila:{
+      type:'string'
+    },
+    numero:{
+      type:'string'
     },
 
-    idLocal:{
-      collection:'Partido',
-      via:'idEquipoLocal'
-    },
-
-    idVisitante:{
-      collection:'Partido',
-      via:'idEquipoVisitante'
+    idPartidoAsiento:{
+      collection:'PartidoAsiento',
+      via:'idAsiento'
     }
+
+
 
   }
 };

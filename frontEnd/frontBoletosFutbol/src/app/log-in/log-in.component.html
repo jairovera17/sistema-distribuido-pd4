@@ -3,7 +3,7 @@
 
   <h1>Bienvenido</h1>
 
-  <div class="row">
+  <div class="row animated bounceInLeft">
     <div class="col-lg-6" style="text-align: center;padding: 10px" >
       <button class="btn btn-primary" (click)="this.openSignIn()">
         Inicia Sesion
@@ -18,7 +18,7 @@
 
 </div>
 
-<div class="container" *ngIf="this.signIn">
+<div class="container animated fadeInUp" *ngIf="this.signIn">
   <h1>Logeate</h1>
 
   <div class="form-group">
@@ -56,7 +56,7 @@
 
 </div>
 
-<div class="container" *ngIf="this.signUp">
+<div class="container animated fadeInUp" *ngIf="this.signUp">
   <h1>Registrate</h1>
 
   <div class="form-group">

@@ -1,0 +1,56 @@
+
+<div class="container" style="text-align: center" *ngIf="!this.showPartidos">
+  <button class="btn btn-warning" (click)="this.emparentar()">
+    Mostrar Partidos
+
+  </button>
+</div>
+
+<div *ngIf="this.showPartidos">
+  <div  *ngFor="let partido of this.proximosPartidos">
+    <div class="container jumbotron  animated bounceInUp" style="text-align: center;">
+      <p>{{partido.idEquipoLocal.nombre}} <strong>VS</strong> {{partido.idEquipoVisitante.nombre}}</p>
+
+      <hr>
+
+      <h5>Estadio:</h5>
+
+      <p>{{partido.idEstadio.nombre}}</p>
+
+      <hr>
+
+      <h5>Fecha:</h5>
+
+      <p>{{partido.fecha}}</p>
+
+      <hr>
+
+      <h5>Boletos</h5>
+
+      <button class="btn btn-lg btn-warning" (click)="partido.showBoletos=!partido.showBoletos">
+        Mostrar/Ocultar Boletos
+      </button>
+      <br><br>
+
+      <div *ngIf="partido.showBoletos" style="overflow-y: auto;max-height: 500px">
+        <div *ngFor="let partAsiento of partido.asientos" class="animated animated bounceInLeft">
+          <div class="jumbotron" style="text-align: left;background-color: white">
+            <p>Seccion:{{partAsiento.idAsiento.seccion}}</p>
+            <p>Fila:{{partAsiento.idAsiento.fila}}</p>
+            <p>Numero:{{partAsiento.idAsiento.numero}}</p>
+            <p>Disponibilidad:{{partAsiento.disponible}}</p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+    <hr>
+  </div>
+</div>
+
+<div>
+
+</div>
