@@ -8,6 +8,8 @@ export class MasterUrlService {
   PartidoURL = 'http://' + this.direccionBackEnd + '/Partido';
   EquipoURL  = 'http://' + this.direccionBackEnd + '/Equipo';
   EstadioURL = 'http://' + this.direccionBackEnd + '/Estadio';
+  AsientoURL = 'http://' + this.direccionBackEnd + '/Asiento';
+  PartidoAsientoURL = 'http://' + this.direccionBackEnd + '/PartidoAsiento';
   constructor() { }
 
 

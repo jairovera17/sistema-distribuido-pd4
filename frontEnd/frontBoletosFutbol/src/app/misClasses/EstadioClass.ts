@@ -4,6 +4,7 @@
 
 export class Estadio{
   constructor(
+    public id: number,
     public nombre: string,
     public ciudad: string,
     public direccion: string

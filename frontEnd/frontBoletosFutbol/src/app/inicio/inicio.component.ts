@@ -49,7 +49,7 @@ export class InicioComponent implements OnInit {
             .post(url, w)
             .subscribe(
               res => {
-             //   console.log(res.json());
+               console.log(res.json());
               },
               err => {
                 console.log('error guardando asiento');

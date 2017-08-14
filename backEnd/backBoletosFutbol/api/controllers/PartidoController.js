@@ -18,15 +18,17 @@ module.exports = {
     var fechaHoy = new Date();
     sails.log.info('FrontEnd solicita los proximos partidos');
     Partido.find({
-      fecha:{'<=':params.fechaHoy}
+      fecha:{'>=':fechaHoy}
     }).exec(function (err,partidos) {
 
-      if(err){
+      if (err) {
         return res.badRequest();
       }
       else return res.json(partidos);
 
-  } );}
+    });
+
+  }
 
 };
 

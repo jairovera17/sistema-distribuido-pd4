@@ -38,4 +38,14 @@ export class PartidosService {
       .get(this.masterurl.EstadioURL);
   }
 
+  getAsientos(){
+    return this._http
+      .get(this.masterurl.AsientoURL);
+  }
+
+  getPartidoAsientos(){
+    return this._http
+      .get(this.masterurl.PartidoAsientoURL + '/getProximosPartidoAsiento');
+  }
+
 }
