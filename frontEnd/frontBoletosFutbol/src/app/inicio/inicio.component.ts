@@ -31,7 +31,7 @@ export class InicioComponent implements OnInit {
 
   ///estos metodos solo se usan para poblar la base
   llenarAsientos() {
-   /* let url = 'http://localhost:1337/Asiento';
+    let url = 'http://localhost:1337/Asiento';
     let secciones = ['GENERAL NORTE',
                     'GENERAL SUR',
                     'PALCOS',
@@ -58,12 +58,12 @@ export class InicioComponent implements OnInit {
         }
         }
       }
-      console.log('listo');*/
+      console.log('listo');
 
     }
 
   llenarEquipos(){
-  /*
+
    let url = 'http://localhost:1337/Equipo';
     let equipos = ['BARCELONA',
       'LIGA DE QUITO',
@@ -91,16 +91,16 @@ export class InicioComponent implements OnInit {
               }
             )
 
-    }*/
+    }
 
   }
 
   llenarPartidos(){
-    /*
+
     let url = 'http://localhost:1337/Partido';
     let fecha = new Date();
 
-    for ( var i = 0; i < 3 ; i ++) {
+    for ( var i = 1; i < 3 ; i ++) {
       var fechaPartido = new Date(fecha.getFullYear(),fecha.getMonth()+3,fecha.getDate()+i);
       var w = new Partido(i, i + 1, i, fechaPartido);
       this._http
@@ -114,12 +114,12 @@ export class InicioComponent implements OnInit {
           }
         )
     }
-*/
+
 
     }
 
   llenarEstadios(){
-    /*
+
     let url = 'http://localhost:1337/Estadio';
      let estadios= [
        'Gonzalo Pozo Ripalda', 'Quito', 'Ave. Rumichaca y Moromoro',
@@ -142,7 +142,7 @@ export class InicioComponent implements OnInit {
           }
         )
     }
-    */
+
 
   }
 

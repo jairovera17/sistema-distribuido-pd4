@@ -1,0 +1,27 @@
+
+<div class="container" style="text-align: center" *ngIf="!this.showPartidos">
+  <button class="btn btn-warning" (click)="this.emparentar()">
+    Mostrar Partidos
+  </button>
+</div>
+
+<div *ngIf="this.showPartidos">
+  <div  *ngFor="let partido of this.proximosPartidos">
+    <div class="container jumbotron animated bounceInUp" style="text-align: center">
+      <p>{{partido.idEquipoLocal.nombre}} <strong>VS</strong> {{partido.idEquipoVisitante.nombre}}</p>
+
+      <hr>
+
+      <h5>Estadio:</h5>
+
+      <p>{{partido.idEstadio.nombre}}</p>
+
+      <hr>
+
+      <h5>Fecha:</h5>
+
+      <p>{{partido.fecha}}</p>
+
+    </div>
+  </div>
+</div>

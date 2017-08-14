@@ -12,18 +12,18 @@ export class UsuarioLogService {
   constructor(private masterurl: MasterUrlService, private _http: Http) { }
 
   logear(nick, password) {
-    const link = this.masterurl.getUsuarioURL() +
+    const link = this.masterurl.UsuarioURL +
       '?nickname=' + nick +
       '&password=' + password;
     console.log(link);
    return this._http
-      .get(this.masterurl.getUsuarioURL() +
+      .get(this.masterurl.UsuarioURL +
       '?nickname=' + nick +
       '&password=' + password);
         }
 
   registrar(user) {
-    const link = this.masterurl.getUsuarioURL();
+    const link = this.masterurl.UsuarioURL;
     return this._http.post(link, user);
 
   }

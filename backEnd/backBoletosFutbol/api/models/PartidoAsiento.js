@@ -12,15 +12,15 @@ module.exports = {
 
     idAsiento:{
       model:'Asiento',
-      required:true
+      required:true,
     },
 
     precio:{
-      type:'number',
+      type:'string',
       required:true
     },
 
-    estado:{
+    disponible:{
       type:'boolean',
       required:true
     },
