@@ -38,8 +38,13 @@
             <p>Seccion:{{partAsiento.idAsiento.seccion}}</p>
             <p>Fila:{{partAsiento.idAsiento.fila}}</p>
             <p>Numero:{{partAsiento.idAsiento.numero}}</p>
-            <p>Disponibilidad:{{partAsiento.disponible}}</p>
-            <p></p>
+            <p>Disponibilidad:{{getDisponibleString(partAsiento.disponible)}}</p>
+            <hr>
+            <div *ngIf="partAsiento.disponible">
+              <button class="btn btn-lg btn-secondary">
+                Comprar
+              </button>
+            </div>
           </div>
         </div>
       </div>

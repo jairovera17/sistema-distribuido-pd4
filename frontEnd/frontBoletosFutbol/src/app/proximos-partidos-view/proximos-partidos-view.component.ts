@@ -66,4 +66,15 @@ export class ProximosPartidosViewComponent implements OnInit {
 
   }
 
+  getDisponibleString(input) {
+    if (input){
+      return 'Disponible'
+    }
+
+    else{
+      return 'No Disponible'
+    }
+
+  }
+
 }
