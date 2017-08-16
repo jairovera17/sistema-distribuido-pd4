@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f00a92c5-33b1-4068-a110-88e749f5171e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+
+
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -14,9 +16,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+
       <file leaf-file-name="inicio.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontEnd/frontBoletosFutbol/src/app/inicio/inicio.component.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -75,45 +77,52 @@
               <folding>
                 <element signature="n#!!block;n#getDisponibleString#0;n#ProximosPartidosViewComponent#0" expanded="false" />
               </folding>
+
             </state>
           </provider>
         </entry>
       </file>
+
       <file leaf-file-name="partidos.service.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontEnd/frontBoletosFutbol/src/app/partidos.service.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="828">
               <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="proximos-partidos-view.component.spec.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontEnd/frontBoletosFutbol/src/app/proximos-partidos-view/proximos-partidos-view.component.spec.ts">
+      <file leaf-file-name="main-view.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontEnd/frontBoletosFutbol/src/app/main-view/main-view.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="18">
+              <caret line="1" column="28" lean-forward="false" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+
       <file leaf-file-name="PartidoController.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/backEnd/backBoletosFutbol/api/controllers/PartidoController.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="254">
               <caret line="51" column="32" lean-forward="true" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
               <folding />
+
             </state>
           </provider>
         </entry>
       </file>
+
       <file leaf-file-name="usuario-log.service.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontEnd/frontBoletosFutbol/src/app/usuario-log.service.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
               <caret line="19" column="36" lean-forward="false" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+
               <folding />
             </state>
           </provider>
@@ -148,7 +157,9 @@
         <option value="$PROJECT_DIR$/backEnd/backBoletosFutbol/api/models/Usuario.js" />
         <option value="$PROJECT_DIR$/backEnd/backBoletosFutbol/api/models/Estadio.js" />
         <option value="$PROJECT_DIR$/backEnd/backBoletosFutbol/api/models/Equipo.js" />
+
         <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/src/app/main-view/main-view.component.html" />
+
         <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/src/app/misClasses/Estadio.ts" />
         <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/src/app/usuario-log.service.ts" />
@@ -156,10 +167,13 @@
         <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/src/app/misClasses/EstadioClass.ts" />
         <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/src/app/misClasses/UsuarioClass.ts" />
         <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/src/app/misClasses/AsientoClass.ts" />
+
         <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/src/app/misClasses/PartidoAsientoClass.ts" />
+
         <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/src/app/view-partidos/view-partidos.component.html" />
         <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/src/app/misClasses/PartidoClass.ts" />
         <option value="$PROJECT_DIR$/backEnd/backBoletosFutbol/api/controllers/PartidoAsientoController.js" />
+
         <option value="$PROJECT_DIR$/backEnd/backBoletosFutbol/config/connections.js" />
         <option value="$PROJECT_DIR$/backEnd/backBoletosFutbol/config/models.js" />
         <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/src/app/master-url.service.ts" />
@@ -180,11 +194,19 @@
         <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/src/app/partidos.service.ts" />
         <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/src/app/inicio/inicio.component.ts" />
         <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/src/app/inicio/inicio.component.html" />
+
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>false</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>false</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
@@ -193,11 +215,12 @@
     <handled-path value="$PROJECT_DIR$/backEnd/backBoletosFutbol/node_modules" />
     <handled-path value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules" />
   </component>
+
   <component name="ProjectFrameBounds">
     <option name="x" value="64" />
     <option name="y" value="-11" />
     <option name="width" value="1857" />
-    <option name="height" value="1092" />
+    <option name="height" value="10
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -217,6 +240,7 @@
     <panes>
       <pane id="ProjectPane">
         <subPane>
+
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="sistema-distribuido-pd4" />
@@ -389,6 +413,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -429,6 +454,14 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
@@ -464,15 +497,6 @@
       <option name="cucumberJsArguments" value="" />
       <option name="executablePath" />
       <option name="filePath" />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -511,6 +535,7 @@
       <workItem from="1502501509899" duration="13347000" />
       <workItem from="1502555203950" duration="1188000" />
       <workItem from="1502579489380" duration="23999000" />
+
       <workItem from="1502677692282" duration="10680000" />
       <workItem from="1502725187909" duration="12000" />
       <workItem from="1502743804172" duration="3017000" />
@@ -518,10 +543,12 @@
       <workItem from="1502828333698" duration="17000" />
       <workItem from="1502847093246" duration="10893000" />
       <workItem from="1502895945064" duration="18000" />
+
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+
     <option name="totallyTimeSpent" value="85295000" />
   </component>
   <component name="ToolWindowManager">
@@ -529,14 +556,18 @@
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19137466" sideWeight="0.5" order="1" side_tool="true" content_ui="combo" x="731" y="307" width="523" height="450" />
+
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31841302" sideWeight="0.08840971" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44138634" sideWeight="0.9115903" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -548,54 +579,7 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
-    <option name="exactExcludedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules/karma/config.tpl.js" />
-        <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules/@angular/cli/blueprints/ng/index.js" />
-        <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules/@angular/cli/blueprints/ng/index.js.map" />
-        <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules/@angular/cli/blueprints/enum/index.js" />
-        <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules/@angular/cli/blueprints/enum/index.js.map" />
-        <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules/@angular/cli/blueprints/pipe/index.js" />
-        <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules/@angular/cli/blueprints/pipe/index.js.map" />
-        <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules/@angular/cli/blueprints/class/index.js" />
-        <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules/@angular/cli/blueprints/class/index.js.map" />
-        <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules/@angular/cli/blueprints/guard/index.js" />
-        <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules/@angular/cli/blueprints/guard/index.js.map" />
-        <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules/@angular/cli/blueprints/module/index.js" />
-        <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules/@angular/cli/blueprints/module/index.js.map" />
-        <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules/@angular/cli/blueprints/service/index.js" />
-        <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules/@angular/cli/blueprints/service/index.js.map" />
-        <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules/@angular/cli/blueprints/component/index.js" />
-        <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules/@angular/cli/blueprints/component/index.js.map" />
-        <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules/@angular/cli/blueprints/directive/index.js" />
-        <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules/@angular/cli/blueprints/directive/index.js.map" />
-        <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules/@angular/cli/blueprints/interface/index.js" />
-        <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules/@angular/cli/blueprints/interface/index.js.map" />
-        <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules/reflect-metadata/Reflect.js" />
-        <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules/reflect-metadata/Reflect.js.map" />
-        <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules/reflect-metadata/test/reflect-definemetadata.js" />
-        <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules/reflect-metadata/test/reflect-definemetadata.js.map" />
-        <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules/reflect-metadata/test/reflect-metadata.js" />
-        <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules/reflect-metadata/test/reflect-metadata.js.map" />
-        <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules/reflect-metadata/test/reflect-getmetadatakeys.js" />
-        <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules/reflect-metadata/test/reflect-getmetadatakeys.js.map" />
-        <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules/reflect-metadata/test/reflect-getmetadata.js" />
-        <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules/reflect-metadata/test/reflect-getmetadata.js.map" />
-        <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules/reflect-metadata/test/reflect-getownmetadata.js" />
-        <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules/reflect-metadata/test/reflect-getownmetadata.js.map" />
-        <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules/reflect-metadata/test/reflect-getownmetadatakeys.js" />
-        <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules/reflect-metadata/test/reflect-getownmetadatakeys.js.map" />
-        <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules/reflect-metadata/test/reflect-hasownmetadata.js" />
-        <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules/reflect-metadata/test/reflect-hasownmetadata.js.map" />
-        <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules/reflect-metadata/test/reflect-decorate.js" />
-        <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules/reflect-metadata/test/reflect-decorate.js.map" />
-        <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules/reflect-metadata/test/reflect-deletemetadata.js" />
-        <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules/reflect-metadata/test/reflect-deletemetadata.js.map" />
-        <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules/reflect-metadata/test/reflect-hasmetadata.js" />
-        <option value="$PROJECT_DIR$/frontEnd/frontBoletosFutbol/node_modules/reflect-metadata/test/reflect-hasmetadata.js.map" />
-      </list>
-    </option>
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -607,6 +591,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+
     <entry file="file://$PROJECT_DIR$/frontEnd/frontBoletosFutbol/karma.conf.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -617,38 +602,48 @@
     <entry file="file://$PROJECT_DIR$/frontEnd/frontBoletosFutbol/tslint.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1956">
+
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+
     <entry file="file://$PROJECT_DIR$/frontEnd/frontBoletosFutbol/tsconfig.json">
+
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+
     <entry file="file://$PROJECT_DIR$/frontEnd/frontBoletosFutbol/package.json">
+
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+
     <entry file="file://$PROJECT_DIR$/frontEnd/frontBoletosFutbol/.angular-cli.json">
+
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+
     <entry file="file://$PROJECT_DIR$/frontEnd/frontBoletosFutbol/src/tsconfig.app.json">
+
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+
     <entry file="file://$PROJECT_DIR$/frontEnd/frontBoletosFutbol/protractor.conf.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -671,10 +666,12 @@
     <entry file="file://$PROJECT_DIR$/frontEnd/frontBoletosFutbol/src/app/view-partidos/view-partidos.component.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
+
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+
     <entry file="file://$PROJECT_DIR$/frontEnd/frontBoletosFutbol/src/app/misClasses/PartidoClass.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -683,26 +680,32 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backEnd/backBoletosFutbol/config/connections.js">
+
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="58" column="26" lean-forward="true" selection-start-line="58" selection-start-column="3" selection-end-line="58" selection-end-column="26" />
         </state>
       </provider>
     </entry>
+
     <entry file="file://$PROJECT_DIR$/backEnd/backBoletosFutbol/config/models.js">
+
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+
     <entry file="file://$PROJECT_DIR$/frontEnd/frontBoletosFutbol/src/app/master-url.service.ts">
+
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="31" lean-forward="false" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
         </state>
       </provider>
     </entry>
+
     <entry file="file://$PROJECT_DIR$/frontEnd/frontBoletosFutbol/src/app/log-in/log-in.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -714,18 +717,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/frontBoletosFutbol/src/app/app.component.ts">
+    <entry file="file://$PROJECT_DIR$/frontEnd/frontBoletosFutbol/protractor.conf.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+
+
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/frontBoletosFutbol/src/app/app.module.ts">
+    <entry file="file://$PROJECT_DIR$/frontEnd/frontBoletosFutbol/src/app/view-partidos/view-partidos.component.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
+
         <state relative-caret-position="468">
           <caret line="41" column="7" lean-forward="false" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
         </state>
@@ -838,11 +845,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-396">
           <caret line="2" column="49" lean-forward="false" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
+
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backEnd/backBoletosFutbol/api/policies/sessionAuth.js">
       <provider selected="true" editor-type-id="text-editor">
+
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
@@ -851,10 +860,12 @@
     <entry file="file://$PROJECT_DIR$/backEnd/backBoletosFutbol/api/responses/badRequest.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4">
+
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+
     <entry file="file://$PROJECT_DIR$/backEnd/backBoletosFutbol/api/responses/ok.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-216">
@@ -867,42 +878,51 @@
         <state relative-caret-position="648">
           <caret line="36" column="4" lean-forward="false" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
           <folding />
+
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/frontBoletosFutbol/src/app/inicio/inicio.component.ts">
+    <entry file="file://$PROJECT_DIR$/backEnd/backBoletosFutbol/config/routes.js">
       <provider selected="true" editor-type-id="text-editor">
+
         <state relative-caret-position="2502">
           <caret line="143" column="25" lean-forward="false" selection-start-line="143" selection-start-column="25" selection-end-line="143" selection-end-column="25" />
+
           <folding />
         </state>
       </provider>
     </entry>
+
     <entry file="file://$PROJECT_DIR$/frontEnd/frontBoletosFutbol/src/app/misClasses/EquipoClass.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="22" />
+
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontEnd/frontBoletosFutbol/src/app/misClasses/AsientoClass.ts">
+    <entry file="file://$PROJECT_DIR$/backEnd/backBoletosFutbol/config/connections.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        <state relative-caret-position="378">
+          <caret line="21" column="3" lean-forward="false" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
+
     <entry file="file://$PROJECT_DIR$/frontEnd/frontBoletosFutbol/src/app/misClasses/PartidoAsientoClass.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+
           <folding />
         </state>
       </provider>
     </entry>
+
     <entry file="file://$PROJECT_DIR$/frontEnd/frontBoletosFutbol/src/app/proximos-partidos-view/proximos-partidos-view.component.ts">
+
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1314">
           <caret line="89" column="29" lean-forward="false" selection-start-line="89" selection-start-column="29" selection-end-line="89" selection-end-column="29" />
@@ -912,14 +932,17 @@
         </state>
       </provider>
     </entry>
+
     <entry file="file://$PROJECT_DIR$/frontEnd/frontBoletosFutbol/src/app/partidos.service.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="828">
           <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+
           <folding />
         </state>
       </provider>
     </entry>
+
     <entry file="file://$PROJECT_DIR$/frontEnd/frontBoletosFutbol/src/app/proximos-partidos-view/proximos-partidos-view.component.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -944,5 +967,6 @@
         </state>
       </provider>
     </entry>
+
   </component>
 </project>

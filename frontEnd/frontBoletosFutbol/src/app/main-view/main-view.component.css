@@ -1,0 +1,12 @@
+.nuevoUsuario{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0e6471;
+  font-size: 50px;
+  font-weight: bold;
+  position: relative;
+  -webkit-animation: mymove 5s;
+  /*-webkit-animation-delay: 4s;*/
+  -webkit-animation-direction: alternate-reverse;
+  animation: mymove 5s;
+  animation-direction: alternate-reverse;
+}
