@@ -1,16 +1,20 @@
+<div >
+  <img src="http://lanacion.com.ec/wp-content/uploads/2016/10/fef.png" alt="" height="50px" width="auto">
+</div>
+<body  >
 
 <div class="container">
 
-  <h1>Bienvenido</h1>
+  <h1 class="welcome" style="text-align:center">Bienvenido</h1>
 
   <div class="row animated bounceInLeft">
-    <div class="col-lg-6" style="text-align: center;padding: 10px" >
-      <button class="btn btn-primary" (click)="this.openSignIn()">
-        Inicia Sesion
+    <div class="col-lg-6" style="text-align: center;padding: 20px; ">
+      <button class="btn btn-primary iniciar transicion"  (click)="this.openSignIn()" >
+        Iniciar Sesion
       </button>
     </div>
-    <div class="col-lg-6" style="text-align: center;padding: 10px;">
-      <button class="btn btn-outline-primary" (click)="this.openSignUp()">
+    <div class="col-lg-6" style="text-align:center; padding: 10px;">
+      <button class="btn btn-outline-primary registrar transicion" (click)="this.openSignUp()">
         Registrarte
       </button>
     </div>
@@ -19,7 +23,7 @@
 </div>
 
 <div class="container animated fadeInUp" *ngIf="this.signIn">
-  <h1>Logeate</h1>
+  <h1 class="sombraLetras">Logeate</h1>
 
   <div class="form-group">
     <label class="col-form-label-sm">Nombre de Usuario:</label>
@@ -38,7 +42,7 @@
 
     <hr>
 
-    <button class="btn btn-success"
+    <button class="btn btn-success transicion"
             [disabled]="!this.usuarioLog.nickname||!this.usuarioLog.password"
             (click)="this.logear(this.usuarioLog)">
       Logearme
@@ -57,7 +61,7 @@
 </div>
 
 <div class="container animated fadeInUp" *ngIf="this.signUp">
-  <h1>Registrate</h1>
+  <h1 class="sombraLetras">Registrate</h1>
 
   <div class="form-group">
 
@@ -85,7 +89,7 @@
 
     <hr>
 
-    <button class="btn btn-success"
+    <button class="btn btn-success transicion"
             [disabled]="!this.usuarioLog.nickname||!this.usuarioLog.password"
             (click)="this.registrar(this.usuarioLog)">
       Registrarme
@@ -101,5 +105,5 @@
     </button>
   </div>
 </div>
-
+</body>
 
