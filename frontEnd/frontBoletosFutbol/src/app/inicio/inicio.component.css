@@ -1,4 +1,26 @@
 .fuentePrincipal{
   font-family: "Loma", Georgia, Serif;
-  font-size: 30px;
+  font-size: 50px;
+  -webkit-animation-name: mychange ;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-direction: alternate;
+  animation-iteration-count: infinite
+}
+
+@-webkit-keyframes mychange {
+  0%   {color:black;}
+  25%  {color:yellow;}
+  50%  {color:blue;}
+  100% {color:red;}
+}
+
+.rotacion{
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 4000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+@-webkit-keyframes spin {
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); }
 }
