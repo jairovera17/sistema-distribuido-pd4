@@ -32,6 +32,11 @@ module.exports = {
     idBoleto:{
       collection:'PartidoAsiento',
       via:'idPartido'
+    },
+
+    idBoletoUsuario:{
+      collection: 'Boleto',
+      via:'idPartido'
     }
 
 

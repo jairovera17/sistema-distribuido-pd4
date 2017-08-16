@@ -5,6 +5,7 @@ import {Estadio} from "../misClasses/EstadioClass";
 import {PartidoAsiento} from "../misClasses/PartidoAsientoClass";
 import {PartidosService} from "../partidos.service";
 import {Asiento} from "../misClasses/AsientoClass";
+import {UsuarioLogService} from "../usuario-log.service";
 
 @Component({
   selector: 'app-proximos-partidos-view',
@@ -20,7 +21,7 @@ export class ProximosPartidosViewComponent implements OnInit {
   partidoAsiento: PartidoAsiento[];
   showPartidos: boolean;
   workingPartidos: Partido[];
-  constructor(private partidoservice: PartidosService) { }
+  constructor(private partidoservice: PartidosService, private _userService: UsuarioLogService) { }
 
   ngOnInit() {
     this.showPartidos = false;
@@ -37,7 +38,9 @@ export class ProximosPartidosViewComponent implements OnInit {
   }
 
   emparentar(){
+
     this.showPartidos = true;
+    console.log(this.proximosPartidos);
 
     for( let i = 0; i < this.partidoAsiento.length ; i++){
       for( let j = 0 ; j < this.asientos.length; j++){
@@ -62,6 +65,35 @@ export class ProximosPartidosViewComponent implements OnInit {
 
 
     }
+
+
+  }
+
+  getDisponibleString(input) {
+    if (input){
+      return 'Disponible'
+    }
+
+    else{
+      return 'No Disponible'
+    }
+
+  }
+
+  comprar(partAsiento: PartidoAsiento){
+
+    this.partidoservice.validarCompra(partAsiento, this._userService.usuario)
+      .subscribe(
+        res => {
+          console.log('has realizado tu compra exitosamente');
+          let rjson = res.json();
+          console.log(rjson);
+          partAsiento.disponible = false;
+        },
+        err => {
+          console.log('error e la compra');
+        }
+      );
 
 
   }
