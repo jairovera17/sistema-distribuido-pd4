@@ -35,13 +35,14 @@
       <div *ngIf="partido.showBoletos" style="overflow-y: auto;max-height: 500px">
         <div *ngFor="let partAsiento of partido.asientos" class="animated animated bounceInLeft">
           <div class="jumbotron" style="text-align: left;background-color: white">
-            <p>Seccion:{{partAsiento.idAsiento.seccion}}</p>
-            <p>Fila:{{partAsiento.idAsiento.fila}}</p>
-            <p>Numero:{{partAsiento.idAsiento.numero}}</p>
-            <p>Disponibilidad:{{getDisponibleString(partAsiento.disponible)}}</p>
+            <p><strong>Seccion: </strong>{{partAsiento.idAsiento.seccion}}</p>
+            <p><strong>Fila: </strong>{{partAsiento.idAsiento.fila}}</p>
+            <p><strong>Numero: </strong>{{partAsiento.idAsiento.numero}}</p>
+            <p>{{partAsiento.precio}}</p>
+            <p><strong>Disponibilidad: </strong>{{getDisponibleString(partAsiento.disponible)}}</p>
             <hr>
             <div *ngIf="partAsiento.disponible">
-              <button class="btn btn-lg btn-secondary">
+              <button class="btn btn-lg btn-outline-primary" (click)="this.comprar(partAsiento)">
                 Comprar
               </button>
             </div>
