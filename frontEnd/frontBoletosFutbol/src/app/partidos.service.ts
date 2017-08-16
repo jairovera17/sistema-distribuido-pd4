@@ -3,6 +3,8 @@ import {MasterUrlService} from "./master-url.service";
 import {Http} from "@angular/http";
 import {Equipo} from "./misClasses/EquipoClass";
 import {Partido} from "./misClasses/PartidoClass";
+import {PartidoAsiento} from "./misClasses/PartidoAsientoClass";
+import {Usuario} from "./misClasses/UsuarioClass";
 
 @Injectable()
 export class PartidosService {
@@ -46,6 +48,17 @@ export class PartidosService {
   getPartidoAsientos(){
     return this._http
       .get(this.masterurl.PartidoAsientoURL + '/getProximosPartidoAsiento');
+  }
+
+
+  validarCompra(partidoAsiento: PartidoAsiento, usuario: Usuario){
+console.log(partidoAsiento);
+    return this._http
+      .get(this.masterurl.PartidoURL + '/validarCompra' +
+        '?usuarionick=' + usuario.nickname +
+        '&precio=' + partidoAsiento.precio +
+        '&idPartido=' + partidoAsiento.idPartido +
+        '&idPartidoAsiento= ' + partidoAsiento.id);
   }
 
 }

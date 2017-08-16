@@ -46,7 +46,7 @@ module.exports = {
 
           Boleto.find({
             idUsuario:user.id,
-            idPartidoAsiento:params.idPartidoAsiento
+            idPartido:params.idPartido
           }).exec(function (err,boleto) {
             sails.log.info(boleto);
             sails.log.info(err);
@@ -79,7 +79,7 @@ module.exports = {
                           else{
                             Boleto.create({
                               idUsuario:user.id,
-                              idPartidoAsiento:params.idPartidoAsiento
+                              idPartido:params.idPartido
                             }).exec(function (err,nuevoBoleto) {
                               if(err)
                                 return res.badRequest();
@@ -101,6 +101,8 @@ module.exports = {
                   });
 
                 }
+                else
+                  return res.badRequest('no mas boletos para ti en ese partido');
               }
           });
          /* PartidoAsiento.findOne({

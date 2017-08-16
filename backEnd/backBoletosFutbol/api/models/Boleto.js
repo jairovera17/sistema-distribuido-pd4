@@ -16,8 +16,8 @@ module.exports = {
 
 
 
-    idPartidoAsiento:{
-      model:'PartidoAsiento',
+    idPartido:{
+      model:'Partido',
       required:true
     }
 

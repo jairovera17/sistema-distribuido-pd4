@@ -38,6 +38,7 @@ export class ProximosPartidosViewComponent implements OnInit {
   }
 
   emparentar(){
+
     this.showPartidos = true;
     console.log(this.proximosPartidos);
 
@@ -81,8 +82,18 @@ export class ProximosPartidosViewComponent implements OnInit {
 
   comprar(partAsiento: PartidoAsiento){
 
-    console.log(partAsiento);
-    console.log(this._userService.usuario);
+    this.partidoservice.validarCompra(partAsiento, this._userService.usuario)
+      .subscribe(
+        res => {
+          console.log('has realizado tu compra exitosamente');
+          let rjson = res.json();
+          console.log(rjson);
+          partAsiento.disponible = false;
+        },
+        err => {
+          console.log('error e la compra');
+        }
+      );
 
 
   }

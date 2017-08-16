@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {Usuario} from "../misClasses/UsuarioClass";
 import {UsuarioLogService} from "../usuario-log.service";
 import {Http} from "@angular/http";
+import {PartidoAsiento} from "../misClasses/PartidoAsientoClass";
 
 @Component({
   selector: 'app-inicio',
@@ -40,8 +41,8 @@ export class InicioComponent implements OnInit {
 
 
     for( var i = 0; i < secciones.length;i++){
-      for(var j =0;j<10;j++){
-        for(var k=1;k<=50;k++) {
+      for(var j =0;j<2;j++){
+        for(var k=1;k<=5;k++) {
 
 
           var w = new Asiento(secciones[i], String.fromCharCode(65 + j),k);
@@ -115,6 +116,53 @@ export class InicioComponent implements OnInit {
         )
     }
 
+
+    }
+
+    llenarPartidosAsientos(){
+    let url = 'http://localhost:1337/PartidoAsiento';
+
+      let secciones = ['GENERAL NORTE',
+        'GENERAL SUR',
+        'PALCOS',
+        'TRIBUNA',
+        'PALCOS VIP'];
+var index=1;
+let numPartidos = 3;
+
+      for( var i = 1; i <numPartidos ;i++){
+
+        for ( var j = 1 ;j < 50; j+=5){
+
+          var precio =5;
+          if(j<10)
+            precio=10;
+          if(j>=10&&j<20)
+            precio=20
+          if(j>=20&&j<30)
+            precio=30
+          if(j>=30&&j<40)
+            precio=40
+          if(j>=40)
+            precio=50
+
+          let partAsiento= new PartidoAsiento(index,j,precio,true,i);
+          index++;
+          this._http
+            .post(url,partAsiento)
+            .subscribe(
+              res => {
+                console.log(res.json());
+              },
+              err => {
+                console.log('error en partidoAsiento');
+              }
+            )
+        }
+
+
+      }
+      console.log('listo');
 
     }
 

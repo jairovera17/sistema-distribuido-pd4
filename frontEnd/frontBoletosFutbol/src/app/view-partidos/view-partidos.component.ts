@@ -69,6 +69,8 @@ export class ViewPartidosComponent implements OnInit {
       .subscribe(
         res =>{
           let rjson: Asiento[] = res.json();
+          console.log(rjson.length);
+          console.log(rjson);
 
           this.asientos = rjson;
         },

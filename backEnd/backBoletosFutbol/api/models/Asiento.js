@@ -10,13 +10,16 @@ module.exports = {
   attributes: {
 
     seccion:{
-      type:'string'
+      type:'string',
+      required:true
     },
     fila:{
-      type:'string'
+      type:'string',
+      required:true
     },
     numero:{
-      type:'string'
+      type:'string',
+      required:true
     },
 
     idPartidoAsiento:{
