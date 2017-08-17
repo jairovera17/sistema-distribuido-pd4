@@ -10,20 +10,21 @@
       <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
 
         <a class="navbar-brand" routerLink="/mainView" style="cursor: pointer">
-          <img src="https://www.google.com/search?q=seleccion+ecuador&client=ubuntu&hs=Sjp&channel=fs&source=lnms&tbm=isch&sa=X&ved=0ahUKEwj72KbbzNrVAhUBLSYKHeuvB3sQ_AUICygC&biw=1301&bih=673#imgrc=DRG-yWH2yf4a0M:" width="30" height="30" class="d-inline-block align-top" alt="">
           <strong><i class="fuentePrincipal">Tri-Cket</i></strong>
         </a>
 
         <div>
           <ul class="navbar-nav">
             <li class="nav-item ">
-              <a class="nav-link" routerLink="/partidosView">Proximos Partidos<span class="sr-only">(current)</span></a>
+              <a class="nav-link fuenteSecundaria" routerLink="/partidosView">Proximos Partidos<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item " style="cursor: pointer">
+
               <a class="nav-link"  routerLink="/miInfo">Mi-Info<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item " style="cursor: pointer">
-              <a class="nav-link" (click)="this.logOut()">Salir<span class="sr-only">(current)</span></a>
+              <a class="nav-link fuenteSecundario"  (click)="this.logOut()">Salir<span class="sr-only">(current)</span></a>
+
             </li>
 
           </ul>
