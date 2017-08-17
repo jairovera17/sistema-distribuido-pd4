@@ -61,4 +61,10 @@ console.log(partidoAsiento);
         '&idPartidoAsiento= ' + partidoAsiento.id);
   }
 
+  getBoletos(usuario: Usuario){
+    return this._http
+      .get(this.masterurl.BoletoURL + '/getBoletos'+
+      '?idUsuario=' + usuario.id);
+  }
+
 }
