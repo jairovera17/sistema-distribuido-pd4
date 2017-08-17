@@ -38,6 +38,7 @@ module.exports = {
     Usuario.findOne({
       nickname:params.usuarionick
     }).exec(function (err, user) {
+      sails.log.info('El usuario '+user+'intentara realizar la compra de un boleto');
 
       if(err)
         return res.badRequest();
@@ -48,8 +49,8 @@ module.exports = {
             idUsuario:user.id,
             idPartido:params.idPartido
           }).exec(function (err,boleto) {
-            sails.log.info(boleto);
-            sails.log.info(err);
+         //   sails.log.info(boleto);
+         //   sails.log.info(err);
             if(err)
                 return res.badRequest();
               else{
@@ -79,7 +80,8 @@ module.exports = {
                           else{
                             Boleto.create({
                               idUsuario:user.id,
-                              idPartido:params.idPartido
+                              idPartido:params.idPartido,
+                              idPartidoAsiento:params.idPartidoAsiento
                             }).exec(function (err,nuevoBoleto) {
                               if(err)
                                 return res.badRequest();
