@@ -1,1 +1,57 @@
+.btn-warning{
+  border-radius: 10px;
+  background-color: #ffffff;
+  border-color: #bd4147;
+  color: #bd4147;
+  text-align: center;
+  transition: all 0.1s;
+  cursor: pointer;
+}
+.btn-warning:hover{
+  background-color: #bd4147;
+  color: #ffffff;
+  border-color: #bd4147;
+  opacity: 0.7;
+}
+.btn-warning span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.btn-warning span:after{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -30px;
+  transition: 0.5s;
+}
+.btn-warning:hover span{
+  padding-right: 35px;
+}
+.btn-warning:hover span:after{
+  opacity: 1;
+  right: 0;
+}
+
+.btnBuy{
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.btnBuy:hover{
+  background-color: #3e8e41;
+}
+
+.btnBuy:active{
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(7px);
+}
 

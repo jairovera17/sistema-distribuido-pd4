@@ -1,8 +1,7 @@
 
 <div class="container" style="text-align: center" *ngIf="!this.showPartidos">
   <button class="btn btn-warning" (click)="this.emparentar()">
-    Mostrar Partidos
-
+    <span>Mostrar Partidos</span>
   </button>
 </div>
 
@@ -27,7 +26,7 @@
 
       <h5>Boletos</h5>
 
-      <button class="btn btn-lg btn-warning" (click)="partido.showBoletos=!partido.showBoletos">
+      <button class="btnBuy btn btn-lg btn-warning " (click)="partido.showBoletos=!partido.showBoletos">
         Mostrar/Ocultar Boletos
       </button>
       <br><br>

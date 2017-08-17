@@ -10,3 +10,16 @@
   animation: mymove 5s;
   animation-direction: alternate-reverse;
 }
+
+.f{
+  /* The image used */
+  background-image: url("http://www.fichajes.net/files/ac-mila-escudo_2_1.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
