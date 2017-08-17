@@ -19,7 +19,14 @@ module.exports = {
     idPartido:{
       model:'Partido',
       required:true
+    },
+
+
+    idPartidoAsiento:{
+      model:'PartidoAsiento',
+      required:true
     }
+
 
   }
 };

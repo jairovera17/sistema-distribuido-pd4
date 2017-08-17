@@ -30,6 +30,11 @@ module.exports = {
       required:true
     },
 
+    idBoleto:{
+      collection:'Boleto',
+      via:'idPartidoAsiento'
+    }
+
 
 
 
