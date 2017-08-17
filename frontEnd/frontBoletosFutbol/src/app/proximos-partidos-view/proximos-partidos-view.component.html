@@ -1,6 +1,6 @@
 
 <div class="container" style="text-align: center" *ngIf="!this.showPartidos">
-  <button class="btn btn-warning" (click)="this.emparentar()">
+  <button class="btn btn-warning animated rollIn" (click)="this.emparentar()">
     <span>Mostrar Partidos</span>
   </button>
 </div>
@@ -26,7 +26,7 @@
 
       <h5>Boletos</h5>
 
-      <button class="btnBuy btn btn-lg btn-warning " (click)="partido.showBoletos=!partido.showBoletos">
+      <button class="btnBuy btn btn-lg btn-warning" (click)="partido.showBoletos=!partido.showBoletos">
         Mostrar/Ocultar Boletos
       </button>
       <br><br>
