@@ -14,6 +14,7 @@ import { MainViewComponent } from './main-view/main-view.component';
 import { ViewPartidosComponent } from './view-partidos/view-partidos.component';
 import {PartidosService} from "./partidos.service";
 import { ProximosPartidosViewComponent } from './proximos-partidos-view/proximos-partidos-view.component';
+import { ViewInfoComponent } from './view-info/view-info.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ProximosPartidosViewComponent } from './proximos-partidos-view/proximos
     LogInComponent,
     MainViewComponent,
     ViewPartidosComponent,
-    ProximosPartidosViewComponent
+    ProximosPartidosViewComponent,
+    ViewInfoComponent
   ],
   imports: [
     BrowserModule,
@@ -42,6 +44,10 @@ import { ProximosPartidosViewComponent } from './proximos-partidos-view/proximos
       {
         path: 'partidosView',
         component: ViewPartidosComponent
+      },
+      {
+        path: 'miInfo',
+        component: ViewInfoComponent
       }
     ])
   ],

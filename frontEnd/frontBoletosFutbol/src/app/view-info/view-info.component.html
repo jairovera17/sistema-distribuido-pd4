@@ -1,0 +1,36 @@
+
+<div class="container">
+
+  <h1>Mis Boletos</h1>
+
+</div>
+
+<div *ngFor="let boleto of this.misBoletos">
+
+  <div class="container jumbotron">
+    <h3>Partido:</h3>
+    <p>{{boleto.idPartido.idEquipoLocal.nombre}} <strong>VS</strong> {{boleto.idPartido.idEquipoVisitante.nombre}}</p>
+    <hr>
+    <h3>Estadio:</h3>
+    <p>{{boleto.idPartido.idEstadio.nombre}}</p>
+    <p>Dir: {{boleto.idPartido.idEstadio.direccion}}</p>
+    <p>Ciudad: {{boleto.idPartido.idEstadio.ciudad}}</p>
+    <hr>
+    <h3>Asiento</h3>
+    <p><strong>Seccion:</strong>{{boleto.idPartidoAsiento.idAsiento.seccion}}</p>
+    <p><strong>Fila:</strong>   {{boleto.idPartidoAsiento.idAsiento.fila}}</p>
+    <p><strong>Numero:</strong> {{boleto.idPartidoAsiento.idAsiento.numero}}</p>
+    <hr>
+    <p><strong>Costo: </strong> {{boleto.idPartidoAsiento.precio}}</p>
+
+  </div>
+
+</div>
+
+<div *ngIf="this.showBoletos ===false">
+  <div>
+    <h2> Parece que no has comprado ningun boleto :v</h2>
+  </div>
+
+
+</div>
