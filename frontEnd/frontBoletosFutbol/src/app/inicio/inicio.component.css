@@ -1,4 +1,36 @@
 .fuentePrincipal{
   font-family: "Loma", Georgia, Serif;
-  font-size: 30px;
+  font-size: 50px;
+  text-shadow: 3px 3px 5px turquoise;
+  -webkit-animation-name: mychange ;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-direction: alternate;
+  animation-iteration-count: infinite
+}
+
+@-webkit-keyframes mychange{
+  0%  {color:yellow;}
+  50%  {color:blue;}
+  100% {color:red;}
+}
+
+.fuenteSecundaria{
+  font-family: "Times New Roman", Times, serif;
+  text-shadow: 2px 2px 6px #80676a;
+  font-size: 20px;
+}
+
+
+.rotacion{
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 4000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+@-webkit-keyframes spin {
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); }
+}
+.colorDeBackgroud{
+  background-color: transparent;
 }
