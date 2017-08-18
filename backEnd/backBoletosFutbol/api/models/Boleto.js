@@ -14,8 +14,6 @@ module.exports = {
       required:true
     },
 
-
-
     idPartido:{
       model:'Partido',
       required:true

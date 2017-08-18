@@ -8,7 +8,7 @@
 module.exports = {
 
   hola:function (req,res) {
-    sails.log.info('hola');
+
     return res.ok('hola');
   },
 
@@ -38,7 +38,7 @@ module.exports = {
     Usuario.findOne({
       nickname:params.usuarionick
     }).exec(function (err, user) {
-      sails.log.info('El usuario '+user+'intentara realizar la compra de un boleto');
+      sails.log.info('El usuario '+JSON.stringify(user)+'intentara realizar la compra de un boleto');
 
       if(err)
         return res.badRequest();
@@ -54,13 +54,15 @@ module.exports = {
             if(err)
                 return res.badRequest();
               else{
+                sails.log.info('En ese partido el usuario tiene '+boleto.length+' comprado');
                 if(!boleto||boleto.length<5){
-                  sails.log.info('estoy dentro');
+                //  sails.log.info('estoy dentro');
 
                   PartidoAsiento.findOne({
                     precio:params.precio,
                     idPartido:params.idPartido,
-                    id:params.idPartidoAsiento
+                    id:params.idPartidoAsiento,
+                    disponible:true
                   }).exec(function (err,partidoAsiento){
                    // sails.log.info(partidoAsiento);
                    // sails.log.info(err);

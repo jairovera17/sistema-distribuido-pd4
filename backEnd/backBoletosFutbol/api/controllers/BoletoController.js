@@ -9,6 +9,7 @@ module.exports = {
 
 
   getBoletos: function (req,res) {
+    sails.log.info('Front End solicita boletos de un usuario');
     var params = req.allParams();
     Boleto.find({
       idUsuario:params.idUsuario
@@ -42,7 +43,7 @@ module.exports = {
 
                   }
                 }
-                sails.log.info('deb'+partidosasientosid);
+              //  sails.log.info('deb'+partidosasientosid);
                 PartidoAsiento.find({
                   id:partidosasientosid
                 }).exec(function (err,partidosasientos) {
@@ -51,13 +52,13 @@ module.exports = {
                   else{
                     if(partidosasientos) {
                       var asientosid=[];
-                      sails.log.info('pushando '+JSON.stringify(partidosasientos));
+                //      sails.log.info('pushando '+JSON.stringify(partidosasientos));
                       for ( var i =0; i<partidosasientos.length;i++) {
-                        sails.log.info('push '+partidosasientos[i].idAsiento);
+                      //  sails.log.info('push '+partidosasientos[i].idAsiento);
                         asientosid.push(partidosasientos[i].idAsiento);
                       }
 
-                      sails.log.info('deb asiento'+asientosid);
+                  //    sails.log.info('deb asiento'+asientosid);
                       Asiento.find({
                         id:asientosid
                       }).exec(function (err, asientos) {
@@ -111,6 +112,36 @@ module.exports = {
         else return res.badRequest('no hay boletos con ese idUsuario');
       }
     });
+
+  },
+
+
+  getReporte: function (req,res) {
+    sails.log.info("Front End Solicita un reporte");
+    var params = req.allParams();
+    Boleto.find({
+     idUsuario:params.idUsuario
+    }).populate('idPartidoAsiento')
+      .exec(function (err,boletos) {
+        if(err)
+          return res.badRequest('error en get reporte-Boleto');
+
+        else{
+          var reporteJson = {
+            boletosComprados:0,
+            totalEnCompras: 0,
+          };
+
+          if(boletos){
+
+            for( var i =0 ;i<boletos.length;i++){
+              reporteJson.boletosComprados++;
+              reporteJson.totalEnCompras+= parseInt(boletos[i].idPartidoAsiento.precio);
+            }
+          }
+          return res.json(reporteJson);
+        }
+    })
 
   }
 

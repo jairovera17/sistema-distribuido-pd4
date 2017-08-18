@@ -6,6 +6,7 @@ import {PartidoAsiento} from "../misClasses/PartidoAsientoClass";
 import {PartidosService} from "../partidos.service";
 import {Asiento} from "../misClasses/AsientoClass";
 import {UsuarioLogService} from "../usuario-log.service";
+import "rxjs/add/operator/map";
 
 @Component({
   selector: 'app-proximos-partidos-view',
@@ -29,7 +30,11 @@ export class ProximosPartidosViewComponent implements OnInit {
       .subscribe(
         res=>{
           let rjson : PartidoAsiento[] = res.json();
-          this.partidoAsiento = rjson;
+          this.partidoAsiento = rjson.map((partAsiento: PartidoAsiento) => {
+
+            partAsiento.error = false;
+            return partAsiento;
+          });
         },
         err=>{
           console.log('error en no on init de proximos partidos');
@@ -80,7 +85,7 @@ export class ProximosPartidosViewComponent implements OnInit {
 
   }
 
-  comprar(partAsiento: PartidoAsiento){
+  comprar(partAsiento: PartidoAsiento) {
 
     this.partidoservice.validarCompra(partAsiento, this._userService.usuario)
       .subscribe(
@@ -91,7 +96,8 @@ export class ProximosPartidosViewComponent implements OnInit {
           partAsiento.disponible = false;
         },
         err => {
-          console.log('error e la compra');
+          partAsiento.disponible = false;
+          partAsiento.error = true;
         }
       );
 

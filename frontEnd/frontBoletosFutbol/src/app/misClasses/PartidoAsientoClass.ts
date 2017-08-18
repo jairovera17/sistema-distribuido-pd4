@@ -9,6 +9,7 @@ export class PartidoAsiento {
     public idAsiento,
     public precio: number,
     public disponible: boolean,
-    public idPartido
+    public idPartido,
+    public error?: boolean
   ){}
 }

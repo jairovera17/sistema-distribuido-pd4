@@ -45,6 +45,24 @@
                 Comprar
               </button>
             </div>
+            <div *ngIf="partAsiento.error">
+              <div class="alert alert-warning">
+                <p>No puedes comprar este boleto, las posibles causas son:</p>
+                <ul>
+                  <li>
+                    Has llegado al limite de boletos por partido
+                  </li>
+                  <li>
+                    Alguien compro el boleto miestras dudabas \ :v /
+                  </li>
+                </ul>
+
+                <button class="btn btn-warning" (click)="partAsiento.error=false">
+                  Ok
+                </button>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>

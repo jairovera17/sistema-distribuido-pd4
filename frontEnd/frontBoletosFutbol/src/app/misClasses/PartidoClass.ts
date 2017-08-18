@@ -13,6 +13,6 @@ export class Partido {
     public idEstadio?,
     public fecha?: Date,
     public asientos?: PartidoAsiento[],
-    public showBoletos?: boolean
+    public showBoletos?: boolean,
   ){}
 }

@@ -8,6 +8,7 @@
 module.exports = {
 
   getProximosPartidoAsiento: function (req, res) {
+
     var fechaHoy = new Date();
     Partido.find({
       fecha:{'>=':fechaHoy}
