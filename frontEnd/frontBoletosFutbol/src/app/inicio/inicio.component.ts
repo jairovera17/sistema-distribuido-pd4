@@ -42,7 +42,7 @@ export class InicioComponent implements OnInit {
 
     for( var i = 0; i < secciones.length;i++){
       for(var j =0;j<2;j++){
-        for(var k=1;k<=5;k++) {
+        for(var k=1;k<=10;k++) {
 
 
           var w = new Asiento(secciones[i], String.fromCharCode(65 + j),k);
@@ -71,6 +71,10 @@ export class InicioComponent implements OnInit {
       'AUCAS',
       'INDEPENDIENTE',
       'EMELEC',
+      'NACIONAL',
+      'DEPORTIVO CUENCA',
+      'DEPORTIVO QUITO',
+      'MACARA',
       'ECUADOR',
       'FRANCIA',
       'ITALIA',
@@ -101,8 +105,8 @@ export class InicioComponent implements OnInit {
     let url = 'http://localhost:1337/Partido';
     let fecha = new Date();
 
-    for ( var i = 1; i < 3 ; i ++) {
-      var fechaPartido = new Date(fecha.getFullYear(),fecha.getMonth()+3,fecha.getDate()+i);
+    for ( var i = 1; i <= 5 ; i ++) {
+      var fechaPartido = new Date(fecha.getFullYear(),fecha.getMonth()+1+i,fecha.getDate()+i);
       var w = new Partido(i, i + 1, i, fechaPartido);
       this._http
         .post(url, w)
@@ -128,7 +132,7 @@ export class InicioComponent implements OnInit {
         'TRIBUNA',
         'PALCOS VIP'];
 var index=1;
-let numPartidos = 3;
+let numPartidos = 5;
 
       for( var i = 1; i <numPartidos ;i++){
 

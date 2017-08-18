@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Usuario} from "../misClasses/UsuarioClass";
+import {UsuarioLogService} from "../usuario-log.service";
 
 @Component({
   selector: 'app-main-view',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainViewComponent implements OnInit {
 
-  constructor() { }
+  usuario: Usuario;
+  constructor(private userLog: UsuarioLogService) { }
 
   ngOnInit() {
+    this.usuario = this.userLog.usuario;
   }
 
 }

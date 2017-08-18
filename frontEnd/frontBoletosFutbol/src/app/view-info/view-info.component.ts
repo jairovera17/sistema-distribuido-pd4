@@ -14,14 +14,30 @@ export class ViewInfoComponent implements OnInit {
   usuario: Usuario;
   misBoletos: Boleto[];
   showBoletos = true;
+  miReporte: any;
   constructor(private partidoService: PartidosService, private userService: UsuarioLogService) { }
 
   ngOnInit() {
     this.showBoletos=true;
     this.usuario = this.userService.usuario;
     this.getBoletos(this.usuario);
+    this.getReporte(this.usuario);
   }
 
+  getReporte(usuario){
+    this.partidoService.getReporteUsuario(this.usuario)
+      .subscribe(
+        res => {
+          let rjson = res.json();
+          this.miReporte = rjson;
+        },
+        err => {
+          console.log('error en getreporte');
+
+        }
+      )
+
+  }
   getBoletos(usuario) {
     this.partidoService.getBoletos(this.usuario)
       .subscribe(

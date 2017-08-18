@@ -67,4 +67,12 @@ console.log(partidoAsiento);
       '?idUsuario=' + usuario.id);
   }
 
+  getReporteUsuario(usuario: Usuario) {
+    return this._http
+      .get(this.masterurl.BoletoURL + '/getReporte' +
+      '?idUsuario=' + usuario.id)
+
+  }
+
+
 }

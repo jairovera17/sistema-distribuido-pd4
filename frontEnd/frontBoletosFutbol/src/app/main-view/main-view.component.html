@@ -1,10 +1,23 @@
 <div  class="container">
-  <h1 class="nuevoUsuario animated rubberBand">
-    Hola de nuevo, esta es la pagina principal de tricket
-    <br>
-    Bienvenido a nuestra aplicacion de compra
-  </h1>
-  <p class="animated swing ">
-    asdfghjkl;
-  </p>
+
+  <div class="jumbotron animated bounceInLeft" style="background-color: white">
+
+    <h3>Bienvenido <i>{{this.usuario.nickname}}</i></h3>
+
+  </div>
+
+  <div class="jumbotron animated bounceInRight" style="text-align: center;background-color: white">
+
+    <h3>Descubre los partidos que estan por venir</h3>
+    <a class="btn btn-lg btn-outline-primary" routerLink="/partidosView"> Proximos Partidos</a>
+    <hr>
+    <h3>Mira tus boletos comprados</h3>
+    <a class="btn btn-lg btn-outline-primary" routerLink="/miInfo">
+      Mi Info
+    </a>
+    <hr>
+
+
+  </div>
+
 </div>
